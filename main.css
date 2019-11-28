@@ -1,0 +1,49 @@
+#navbar {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  background-image: linear-gradient(red, black);
+}
+#navbar ul {
+  float: right;
+}
+#navbar li {
+  display: inline;
+  padding-right: 2em;
+}
+#navbar a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+#navbar a:hover {
+  background-color: blue;
+}
+#welcome-section {
+  height: 100vh;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+#projects {
+  height: 100vh;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+#contact {
+  height: 100vh;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+@media  {
+
+}
