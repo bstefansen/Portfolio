@@ -1,12 +1,17 @@
+body {
+
+}
 #navbar {
+  display: flex;
+  justify-content: flex-end;
   position: fixed;
-  top: 0px;
-  left: 0px;
+  top: 0;
+  left: 0;
   width: 100%;
   background-image: linear-gradient(red, black);
 }
 #navbar ul {
-  float: right;
+
 }
 #navbar li {
   display: inline;
@@ -22,11 +27,15 @@
 }
 #welcome-section {
   height: 100vh;
+  width: 100%;
   justify-content: center;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
+  background-image: linear-gradient(90deg, black, teal);
+  color: white;
+  font-size: 140%;
 }
 #projects {
   height: 100vh;
@@ -37,12 +46,15 @@
   text-align: center;
 }
 #contact {
-  height: 100vh;
+  height: 100%;
+  width: 100%;
   justify-content: center;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
+  background-color: black;
+  color: white;
 }
 @media  {
 
