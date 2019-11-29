@@ -84,8 +84,28 @@ body {
 #linkedin {
   padding-bottom: 5px;
 }
-@media  (min-width: 1367){
+
+/* MEDIA QUERY SECTION*/
+@media  (min-width: 1367px){
   body {
     font-size: 150%;
+  }
+  #navbar {
+    font-size: 250%;
+  }
+  #welcome-section {
+    font-size: 400%;
+  }
+  #projects {
+    font-size: 400%;
+  }
+  #contact {
+    font-size: 400%;
+  }
+  #linkedin {
+    height: 80px;
+  }
+  #Github {
+    height: 90px;
   }
 }
