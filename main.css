@@ -131,6 +131,9 @@ body {
   #projects {
     font-size: 400%;
   }
+  #projects h2 {
+    font-size: 300%;
+  }
   #contact {
     font-size: 400%;
   }
