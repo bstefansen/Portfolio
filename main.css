@@ -119,7 +119,7 @@ body {
 /* MEDIA QUERY SECTION*/
 @media  (min-width: 1367px){
   body {
-    font-size: 150%;
+    font-size: 50%;
   }
   #navbar {
     font-size: 250%;
