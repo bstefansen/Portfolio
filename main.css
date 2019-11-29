@@ -148,6 +148,9 @@ body {
   #contact h2 {
     font-size: 300%;
   }
+  #contact p {
+    font-size: 150%;
+  }
   #linkedin {
     height: 80px;
   }
