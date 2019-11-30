@@ -116,6 +116,14 @@ body {
   font-style: italic;
   font-size: 90%;
 }
+#contact img {
+  transition: transform 0.3s ease-out;
+  transition: 0.3s;
+}
+#contact img:hover {
+  transform: translateY(8px);
+  box-shadow: 0px 2px 0px white;
+}
 .contact-logos img {
   margin: 1em;
 }
