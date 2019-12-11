@@ -1,4 +1,4 @@
-# Portfolio
+# Portfolio | Blake Stefansen
 
 A portfolio of my web development projects
 
