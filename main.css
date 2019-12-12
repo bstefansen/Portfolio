@@ -176,4 +176,8 @@ body {
   #Github {
     height: 90px;
   }
+  .resume-icon {
+    height: 150px;
+    margin-top: 2em;
+  }
 }
