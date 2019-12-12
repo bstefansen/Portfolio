@@ -100,10 +100,10 @@ body {
   color: white;
   transition: transform 0.3s ease-out;
   transition: 0.5s;
-  background-color: #659DBD;
+  background-image: linear-gradient(0deg, grey, #11E1FF);
   padding: 2em;
   margin: 1em;
-  border-radius: 30px;
+  border-radius: 40px;
   box-shadow: 0px 3px 5px 1px black;
 }
 .project-tile a:hover {
