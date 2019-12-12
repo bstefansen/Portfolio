@@ -145,9 +145,11 @@ body {
 .contact-logos img {
   margin: 1em;
 }
+#github {
+  padding-bottom: 5px;
+}
 #email {
   padding-bottom: 5px;
-
 }
 #linkedin {
   padding-bottom: 5px;
