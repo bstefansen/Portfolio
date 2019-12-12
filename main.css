@@ -49,10 +49,11 @@ body {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  background-image: linear-gradient(0deg, grey, #659DBD);
+  background-image: linear-gradient(0deg, grey, #11E1FF);
   color: white;
   font-size: 140%;
   text-shadow: 2px 2px 10px black;
+  border-bottom: solid 2px black;
 }
 #welcome-section h1 {
   margin-bottom: 2em;
@@ -73,10 +74,11 @@ body {
   display: grid;
   align-items: center;
   text-align: center;
-  background-image: linear-gradient(#FBEEC1, black);
+  background-image: linear-gradient(#659DBD, black);
   color: white;
   font-size: 150%;
-  text-shadow: 2px 2px 10px black;
+  text-shadow: 2px 2px 8px black;
+  border-bottom: solid 2px black;
 }
 #projects h2 {
   display: block;
@@ -120,6 +122,7 @@ body {
   background-image: linear-gradient(#FBEEC1, grey);
   color: black;
   font-size: 150%;
+  border-bottom: solid 2px black;
 }
 #contact h2 {
   padding-bottom: 0;
