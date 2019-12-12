@@ -135,8 +135,19 @@ body {
   transform: translateY(8px);
   box-shadow: 0px 2px 0px white;
 }
+#contact-logos {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 100px;
+  justify-content: center;
+  text-align: center;
+}
 .contact-logos img {
   margin: 1em;
+}
+#email {
+  padding-bottom: 5px;
+
 }
 #linkedin {
   padding-bottom: 5px;
