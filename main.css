@@ -183,11 +183,14 @@ body {
   #contact p {
     font-size: 150%;
   }
-  #linkedin {
+  #github {
     height: 80px;
   }
-  #Github {
-    height: 90px;
+  #email {
+    height: 80px;
+  }
+  #linkedin {
+    height: 80px;
   }
   .resume-icon {
     height: 150px;
