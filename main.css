@@ -53,6 +53,16 @@ body {
   font-size: 140%;
   text-shadow: 2px 2px 10px black;
 }
+.resume-icon {
+  margin-top: 3em;
+  padding: 1em;
+  transition: transform 0.3s ease-out;
+  transition: 0.5s;
+}
+.resume-icon:hover {
+  transform: translateY(10px);
+  box-shadow: 0px 2px 0px white;
+}
 #projects {
   height: 100vh;
   justify-content: center;
