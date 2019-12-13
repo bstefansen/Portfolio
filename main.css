@@ -13,17 +13,13 @@ body {
 /* NAVBAR SECTION */
 #navbar {
   display: flex;
-  justify-content: flex-end;
   position: fixed;
+  justify-content: flex-end;
   top: 0;
-  left: 0;
   width: 100%;
   background-color: black;
   box-shadow: 0px 4px 0px white;
   font-size: 120%;
-}
-#navbar ul {
-  display: block;
 }
 #navbar li {
   display: inline;
@@ -39,6 +35,11 @@ body {
 }
 #navbar a:hover {
   color: #659DBD;
+}
+#nav-email {
+  position: absolute;
+  left: 0;
+  margin-left: 2em;
 }
 /* WELCOME SECTION */
 #welcome-section {
@@ -82,11 +83,15 @@ body {
 }
 #projects h2 {
   display: block;
-  align-content: center;
   text-align: center;
   font-size: 200%;
+  margin-top: 2em;
 }
-
+.project-tile img {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
 .project-tile {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -94,21 +99,22 @@ body {
   text-align: center;
   grid-column-gap: 30px;
   font-size: 125%;
+  margin: 0px;
+  padding: 0px;
 }
 .project-tile a {
   text-decoration: none;
   color: white;
   transition: transform 0.3s ease-out;
   transition: 0.5s;
-  background-image: linear-gradient(0deg, grey, #11E1FF);
   padding: 2em;
   margin: 1em;
   border-radius: 40px;
-  box-shadow: 0px 3px 5px 1px black;
+  margin-bottom: 3em;
 }
 .project-tile a:hover {
   transform: translateY(8px);
-  color: black;
+  color: yellow;
 }
 /* CONTACT SECTION */
 #contact {
