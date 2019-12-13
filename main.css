@@ -211,4 +211,11 @@ body {
   .resume-icon {
     height: 150px;
   }
+  .project-tile img {
+    height: 400px;
+    width: 400px;
+  }
+  .project-tile {
+    font-size: 130%;
+  }
 }
