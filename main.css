@@ -58,9 +58,12 @@ body {
   border-bottom: solid 3px black;
 }
 #welcome-section h1 {
-  margin-bottom: 2em;
   text-shadow: 2px 2px 2px black;
-
+}
+#welcome-section p {
+  font-size: 80%;
+  text-shadow: 2px 2px 2px black;
+  margin-bottom: 2em;
 }
 .resume-icon {
   padding: 1em;
