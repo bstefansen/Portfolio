@@ -112,9 +112,8 @@ body {
   grid-column-gap: 30px;
   font-size: 115%;
   margin: auto;
-
 }
-.project-tile a {
+.tile{
   text-decoration: none;
   color: white;
   transition: transform 0.3s ease-out;
@@ -124,8 +123,22 @@ body {
   margin-bottom: 4em;
   border-radius: 40px;
 }
-.project-tile a:hover {
+.tile:hover {
   transform: translateY(8px);
+  color: yellow;
+}
+.code-tile {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.code-tile a {
+  color: white;
+  text-decoration: none;
+  transition: transform 0.3s ease-out;
+  transition: 0.5s;
+}
+.code-tile a:hover {
+  transform: scale(1.1);
   color: yellow;
 }
 /* CONTACT SECTION */
