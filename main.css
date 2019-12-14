@@ -136,6 +136,8 @@ body {
   text-decoration: none;
   transition: transform 0.3s ease-out;
   transition: 0.5s;
+  padding: 0;
+  margin: auto;
 }
 .code-tile a:hover {
   transform: scale(1.1);
@@ -227,6 +229,9 @@ body {
   }
   .resume-icon {
     height: 150px;
+  }
+  #projects h2 {
+    margin-bottom: 0.5em;
   }
   .project-tile img {
     height: 400px;
