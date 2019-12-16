@@ -78,10 +78,6 @@ body {
 /* PROJECTS SECTION */
 #projects {
   height: 100vh;
-  justify-content: center;
-  display: grid;
-  align-items: center;
-  text-align: center;
   background-image: linear-gradient(#659DBD, black);
   color: white;
   font-size: 150%;
@@ -89,17 +85,15 @@ body {
   border-bottom: solid 3px black;
 }
 #projects h2 {
-  display: block;
   text-align: center;
   font-size: 200%;
-  margin-top: 2em;
+  margin-top: 0;
+  padding-top: 2em;
 }
 .project-tile img {
-  height: 100%;
-  max-height: 400px;
+  height: 10em;
+  width: 10em;
   object-fit: cover;
-  width: 100%;
-  max-width: 400px;
   border: solid 4px black;
   border-radius: 20px;
   box-shadow: 0px 2px 7px 1px black;
@@ -107,8 +101,6 @@ body {
 .project-tile {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  justify-content: center;
-  text-align: center;
   grid-column-gap: 30px;
   font-size: 115%;
   margin: auto;
@@ -116,6 +108,8 @@ body {
 .tile{
   text-decoration: none;
   color: white;
+  display: block;
+  text-align: center;
   transition: transform 0.3s ease-out;
   transition: 0.5s;
   margin: 2em;
@@ -128,18 +122,16 @@ body {
   color: yellow;
 }
 .code-tile {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-}
-.code-tile a {
   color: white;
+  display: block;
   text-decoration: none;
+  text-align: center;
   transition: transform 0.3s ease-out;
   transition: 0.5s;
-  padding: 0;
-  margin: auto;
+  width: 100%;
+  margin-bottom: 1em;
 }
-.code-tile a:hover {
+.code-tile:hover {
   transform: scale(1.1);
   color: yellow;
 }
@@ -208,6 +200,18 @@ body {
   }
   #projects h2 {
     font-size: 300%;
+    margin-bottom: 0.5em;
+  }
+  .project-tile img {
+    height: 10em;
+    width: 10em;
+  }
+  .project-tile {
+    font-size: 130%;
+  }
+  .code-tile {
+    font-size: 130%;
+    margin-bottom: 0.5em;
   }
   #contact {
     font-size: 400%;
@@ -230,18 +234,18 @@ body {
   .resume-icon {
     height: 150px;
   }
-  #projects h2 {
-    margin-bottom: 0.5em;
+}
+@media (max-width: 767px) {
+
+}
+@media (max-width: 479px) {
+  #navbar {
+    font-size: 80%;
   }
-  .project-tile img {
-    height: 400px;
-    width: 400px;
+  #navbar li {
+    margin: 1em;
   }
-  .project-tile {
-    font-size: 130%;
-  }
-  .code-tile {
-    font-size: 130%;
-    margin-bottom: 0.5em;
+  #nav-email {
+    margin-left: 1em;
   }
 }
