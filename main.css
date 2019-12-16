@@ -222,6 +222,11 @@ html,body {
     height: 150px;
   }
 }
+@media (max-width: 1367px) {
+  .project-tile {
+    display: block;
+  }
+}
 /* phone landscape layout */
 @media (max-width: 767px) {
   #welcome-section {
@@ -239,9 +244,6 @@ html,body {
   }
   .code-tile {
     text-align: center;
-  }
-  .project-tile {
-    display: block;
   }
   .project-tile img {
     height: 50vh;
@@ -264,9 +266,6 @@ html,body {
   }
   #projects {
     height: 225vh;
-  }
-  .project-tile {
-    display: block;
   }
   .contact-logos {
     grid-column-gap: 10px;
