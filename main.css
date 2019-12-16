@@ -128,7 +128,8 @@ body {
   text-align: center;
   transition: transform 0.3s ease-out;
   transition: 0.5s;
-  width: 100%;
+  width: 6em;
+  margin: auto;
   margin-bottom: 1em;
 }
 .code-tile:hover {
@@ -200,7 +201,8 @@ body {
   }
   #projects h2 {
     font-size: 300%;
-    margin-bottom: 0.5em;
+    padding-top: 1.5em;
+    margin-bottom: 1em;
   }
   .project-tile img {
     height: 10em;
