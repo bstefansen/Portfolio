@@ -224,6 +224,29 @@ html,body {
 }
 /* phone landscape layout */
 @media (max-width: 767px) {
+  #welcome-section {
+    height: 100vh;
+    font-size: 120%;
+  }
+  #welcome-section p {
+    margin-bottom: 1em;
+  }
+  .resume-icon {
+    height: 70px;
+  }
+  #projects {
+    height: 350vh;
+  }
+  .code-tile {
+    text-align: center;
+  }
+  .project-tile {
+    display: block;
+  }
+  .project-tile img {
+    height: 50vh;
+    width: 80vw;
+  }
 }
 /* phone portrait layout */
 @media (max-width: 479px) {
