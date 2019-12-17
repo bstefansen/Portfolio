@@ -117,7 +117,7 @@ html,body {
   display: block;
   width: 6em;
   margin: auto;
-  margin-bottom: 1;
+  margin-bottom: .5em;
   padding: .5em;
   color: white;
   background-image: linear-gradient(black, black);
@@ -194,7 +194,7 @@ html,body {
   #projects h2 {
     font-size: 300%;
     padding-top: 1.5em;
-    margin-bottom: 1em;
+    margin-bottom: .5em;
   }
   .project-tile img {
     height: 10em;
