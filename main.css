@@ -117,8 +117,11 @@ html,body {
   display: block;
   width: 6em;
   margin: auto;
-  margin-bottom: 1em;
+  margin-bottom: 1;
+  padding: .5em;
   color: white;
+  background-image: linear-gradient(black, black);
+  border-radius: 10px;
   text-decoration: none;
   text-align: center;
   transition: transform 0.3s ease-out;
@@ -223,7 +226,7 @@ html,body {
   }
 }
 /* mobile layout initial settings */
-@media (max-width: 1367px) {
+@media (max-width: 1365px) {
   .project-tile {
     display: block;
   }
