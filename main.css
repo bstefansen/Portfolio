@@ -231,6 +231,9 @@ html,body {
   .project-tile {
     display: block;
   }
+  #projects {
+    height: 400vh;
+  }
 }
 /* phone landscape layout */
 @media (max-width: 767px) {
