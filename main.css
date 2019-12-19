@@ -234,6 +234,13 @@ html,body {
   #projects {
     height: 200vh;
   }
+  .project-tile img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    height: 25%;
+  }
 }
 /* phone landscape layout */
 @media (max-width: 767px) {
