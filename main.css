@@ -232,7 +232,7 @@ html,body {
     display: block;
   }
   #projects {
-    height: 400vh;
+    height: 200vh;
   }
 }
 /* phone landscape layout */
@@ -254,7 +254,7 @@ html,body {
     height: 4em;
   }
   #projects {
-    height: 400vh;
+    height: 410vh;
   }
   .project-tile img {
     display: block;
@@ -279,7 +279,7 @@ html,body {
     font-size: 175%;
   }
   #projects {
-    height: 210vh;
+    height: 190vh;
   }
   #project-tile img {
     width: 100%;
