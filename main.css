@@ -1,4 +1,5 @@
 html,body {
+  font-family: 'Lobster', serif;
   margin: 0;
   height: 100%;
   width: 100%;
@@ -10,9 +11,10 @@ html,body {
   position: fixed;
   justify-content: flex-end;
   top: 0;
+  padding-top: 10px;
   width: 100%;
   background-color: black;
-  box-shadow: 0px 4px 0px white;
+  box-shadow: 0px 4px 0px white, 0px 5px 0px black;
   font-size: 120%;
   animation: fadein 4s;
   z-index: 500;
@@ -39,7 +41,6 @@ html,body {
 /* WELCOME SECTION */
 #welcome-section {
   height: 100vh;
-  width: 100%;
   justify-content: center;
   display: flex;
   flex-direction: column;
@@ -48,10 +49,11 @@ html,body {
   background-position: bottom;
   background-size: cover;
   color: white;
-  font-size: 140%;
   border-bottom: solid 3px black;
 }
 #welcome-section h1 {
+  font-size: 150%;
+  margin-bottom: 1.25em;
   text-shadow: 2px 2px 2px black;
   position: relative;
   left: -1500px;
@@ -65,7 +67,8 @@ html,body {
   animation: fadein 4s;
 }
 .resume-icon {
-  padding: 1em;
+  padding: .75em;
+  transform: scale(1.5);
   transition: transform 0.3s ease-out;
   transition: 0.5s;
   right: -500px;
@@ -73,7 +76,7 @@ html,body {
   animation: fadein 4s, slideleft 2s forwards;
 }
 .resume-icon:hover {
-  transform: scale(1.05);
+  transform: scale(1.55);
   box-shadow: 0px 0px 0px 4px white;
   border-radius: 30%;
 }
@@ -93,65 +96,80 @@ html,body {
   height: 100vh;
   background-image: linear-gradient(#659DBD, black);
   color: white;
-  font-size: 150%;
   text-shadow: 2px 2px 8px black;
   border-bottom: solid 3px black;
 }
 #projects h2 {
   text-align: center;
   font-size: 200%;
-  margin-top: 0;
-  padding-top: 2em;
 }
-.project-tile img {
-  height: 10em;
-  width: 10em;
-  object-fit: cover;
-  border: solid 4px black;
-  border-radius: 20px;
-  box-shadow: 0px 2px 7px 1px black;
-}
-.project-tile {
+.projectGrid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-column-gap: 30px;
-  font-size: 115%;
-  margin: auto;
-}
-.tile{
-  display: block;
-  margin: 2em;
-  margin-top: 0;
-  margin-bottom: 4em;
-  border-radius: 40px;
-  text-decoration: none;
-  color: white;
   text-align: center;
+  margin: 2em;
+  margin-top: 1em;
+  margin-bottom: 3em;
+}
+.codeTile {
+  display: block;
+  background-color: black;
+  width: 70%;
+  margin: auto;
+  color: white;
+  text-decoration: none;
+  border: solid 4px black;
+  box-shadow: 0px 2px 7px 1px black;
   transition: transform 0.3s ease-out;
   transition: 0.5s;
 }
-.tile:hover {
+.codeTile:hover {
+  transform: translateY(-8px);
+  color: yellow;
+  text-decoration: none;
+}
+.projectTile {
+  display: block;
+  color: white;
+  width: 70%;
+  margin: auto;
+  text-decoration: none;
+  transition: transform 0.3s ease-out;
+  transition: 0.5s;
+}
+.projectTile:hover {
   transform: translateY(8px);
   color: yellow;
-}
-.code-tile {
-  display: block;
-  width: 6em;
-  margin: auto;
-  margin-bottom: .5em;
-  padding: .5em;
-  color: white;
-  background-image: linear-gradient(black, black);
-  box-shadow: 0px 2px 7px 1px black;
-  border-radius: 10px;
   text-decoration: none;
-  text-align: center;
+}
+.projectName {
+  font-size: x-large;
+  background-color: black;
+  box-shadow: 0px 2px 7px 1px black;
+}
+.projectGrid img {
+  height: 12em;
+  width: 100%;
+  margin: auto;
+  object-fit: cover;
+  border: solid 4px black;
+  box-shadow: 0px 2px 7px 1px black;
+}
+.carousel-control-next {
+  width: 5em;
   transition: transform 0.3s ease-out;
   transition: 0.5s;
 }
-.code-tile:hover {
-  transform: scale(1.1);
-  color: yellow;
+.carousel-control-prev {
+  width: 5em;
+  transition: transform 0.3s ease-out;
+  transition: 0.5s;
+}
+.carousel-control-next:hover {
+  background: linear-gradient(to right, rgba(0,0,255,0), rgba(200,200,200,0.2));
+}
+.carousel-control-prev:hover {
+  background: linear-gradient(to left, rgba(0,0,255,0), rgba(200,200,200,0.2));
 }
 /* CONTACT SECTION */
 #contact {
@@ -177,11 +195,10 @@ html,body {
 }
 #contact img {
   transition: transform 0.3s ease-out;
-  transition: 0.3s;
 }
 #contact img:hover {
-  transform: translateY(8px);
-  box-shadow: 0px 2px 0px white;
+  transform: translateY(8px) scale(1.05);
+  box-shadow: 0px 4px 0px white;
 }
 .contact-logos {
   display: grid;
@@ -190,7 +207,7 @@ html,body {
   text-align: center;
   grid-column-gap: 50px;
 }
-.contact-logos img {
+.contact-logos a {
   margin: 1em;
 }
 #github,
@@ -279,10 +296,16 @@ html,body {
     margin-bottom: 1em;
   }
   .resume-icon {
-    height: 4em;
+    height: 3.5em;
+    margin-top: 1em;
   }
   #projects {
-    height: 410vh;
+    padding-top: 5em;
+    height: 100vh;
+    font-size: small;
+  }
+  .projectName {
+    font-size: small;
   }
   .project-tile img {
     display: block;
@@ -290,6 +313,9 @@ html,body {
     margin-right: auto;
     width: 70%;
     height: 25%;
+  }
+  #contact h2 {
+    font-size: xxx-large;
   }
 }
 /* phone portrait layout */
@@ -305,12 +331,31 @@ html,body {
   }
   #welcome-section {
     font-size: 175%;
+    padding: 1em;
+    padding-bottom: 0em;
+  }
+  #welcome-section h1 {
+    margin-top: 0em;
+  }
+  #welcome-section p {
+    padding-bottom: 2em;
   }
   #projects {
-    height: 190vh;
+    padding-top: 5em;
+    height: 100vh;
+  }
+  #projects h2 {
+    font-size: xxx-large;
+  }
+  .projectName {
+    font-size: small;
   }
   #project-tile img {
     width: 100%;
+  }
+  .carousel-control-next,
+  .carousel-control-prev {
+    width: 2em;
   }
   .contact-logos {
     grid-column-gap: 10px;

@@ -4,8 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <link rel="stylesheet" href="main.css">
+  <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
   <title>Portfolio | Blake Stefansen</title>
 </head>
 
@@ -24,32 +25,89 @@
     <p>I'm a passionate developer looking to help you succeed</p>
     <div>
       <a href="resume/resume.pdf" target="_blank">
-        <img class="resume-icon" src="images/resume-icon.png"
-         height=100px alt="resume icon"></a>
+        <img class="resume-icon" src="images/resume-icon.png" alt="resume icon"></a>
     </div>
   </section>
 
   <section id="projects">
     <h2>Projects</h2>
-    <div class="project-tile">
-      <div>
-        <a class="code-tile" href="https://github.com/bstefansen/FloridaHomesteading" target="_blank">View Code</a>
-        <a class="tile" href="https://bstefansen.github.io/FloridaHomesteading/" target="_blank">
-          <img src="images/homesteading.png" alt="image of homesteading website"><br>Florida Homesteading
-        </a>
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="projectGrid">
+            <div>
+              <a class="codeTile" href="https://github.com/bstefansen/FloridaHomesteading" target="_blank">View Code</a>
+              <div>
+                <a class="projectTile" href="https://bstefansen.github.io/FloridaHomesteading/" target="_blank">
+                  <img src="images/homesteading.png" alt="image of homesteading website">
+                  <p class="projectName">Florida Homesteading</p>
+                </a>
+              </div>
+            </div>
+            <div>
+              <a class="codeTile" href="https://github.com/bstefansen/JavaScriptCalculator" target="_blank">View Code</a>
+              <div>
+                <a class="projectTile" href="https://bstefansen.github.io/JavaScriptCalculator/" target="_blank">
+                  <img src="images/JSCalculatorPhoto.JPG" alt="image of calculator website">
+                  <p class="projectName">JS Calculator</p>
+                </a>
+              </div>
+            </div>
+            <div>
+              <a class="codeTile" href="https://github.com/bstefansen/GitDocumentation" target="_blank">View Code</a>
+              <div>
+                <a class="projectTile" href="https://bstefansen.github.io/GitDocumentation/" target="_blank">
+                  <img src="images/techdoc.png" alt="image of documentation website">
+                  <p class="projectName">Tech Doc</p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="projectGrid">
+            <div>
+              <a class="codeTile" href="https://github.com/bstefansen/PomodoroClock" target="_blank">View Code</a>
+              <div>
+                <a class="projectTile" href="https://bstefansen.github.io/PomodoroClock/" target="_blank">
+                  <img src="images/pomodoroClockPic.JPG" alt="image of homesteading website">
+                  <p class="projectName">Pomodoro Clock</p>
+                </a>
+              </div>
+            </div>
+            <div>
+              <a class="codeTile" href="https://github.com/bstefansen/DrumMachine" target="_blank">View Code</a>
+              <div>
+                <a class="projectTile" href="https://bstefansen.github.io/DrumMachine/" target="_blank">
+                  <img src="images/drumMachinePic.JPG" alt="image of calculator website">
+                  <p class="projectName">Drum Machine</p>
+                </a>
+              </div>
+            </div>
+            <div>
+              <a class="codeTile" href="https://github.com/bstefansen/QuoteGenerator" target="_blank">View Code</a>
+              <div>
+                <a class="projectTile" href="https://bstefansen.github.io/QuoteGenerator/" target="_blank">
+                  <img src="images/quoteG.JPG" alt="image of documentation website">
+                  <p class="projectName">Quote Generator</p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div>
-        <a class="code-tile" href="https://github.com/bstefansen/JavaScriptCalculator" target="_blank">View Code</a>
-        <a class="tile" href="https://bstefansen.github.io/JavaScriptCalculator/" target="_blank">
-          <img src="images/JSCalculatorPhoto.JPG" alt="image of calculator website"><br>JS Calculator
-        </a>
-      </div>
-      <div>
-        <a class="code-tile" href="https://github.com/bstefansen/GitDocumentation" target="_blank">View Code</a>
-        <a class="tile" href="https://bstefansen.github.io/GitDocumentation/" target="_blank">
-          <img src="images/techdoc.png" alt="image of documentation website"><br>Git Documentation
-        </a>
-      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
     </div>
   </section>
 
@@ -70,3 +128,7 @@
   </section>
 </body>
 </html>
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
