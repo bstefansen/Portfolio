@@ -94,7 +94,7 @@ html,body {
 /* PROJECTS SECTION */
 #projects {
   height: 100vh;
-  background-image: linear-gradient(#659DBD, black);
+  background-image: linear-gradient(#659DBD, rgb(37, 37, 37));
   color: white;
   text-shadow: 2px 2px 8px black;
   border-bottom: solid 3px black;
@@ -180,7 +180,7 @@ html,body {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  background-image: linear-gradient(#FBEEC1, grey);
+  background-image: linear-gradient(rgb(240, 185, 115), grey);
   color: black;
   font-size: 150%;
   border-bottom: solid 3px black;
