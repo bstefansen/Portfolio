@@ -175,8 +175,8 @@ html,body {
 #contact {
   height: 100vh;
   width: 100%;
-  justify-content: center;
   display: flex;
+  justify-content: center;
   flex-direction: column;
   align-items: center;
   text-align: center;
@@ -216,6 +216,7 @@ html,body {
 #linkedin {
   padding-bottom: 5px;
 }
+
 /* MEDIA QUERY SECTION*/
 /* desktop layout */
 @media  (min-width: 1367px){
