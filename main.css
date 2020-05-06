@@ -280,7 +280,7 @@ html,body {
   }
 }
 /* mobile layout initial settings */
-@media (max-width: 1365px) {
+@media (max-width: 1366px) {
   #welcome-section {
     height: 100vh;
     font-size: 250%;
@@ -292,38 +292,46 @@ html,body {
     height: 3.5em;
     margin-top: 1em;
   }
-  .project-tile {
-    display: block;
-  }
   #projects {
-    height: 200vh;
+    padding-top: 5em;
+    height: 100vh;
   }
-  .project-tile img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 70%;
-    height: 25%;
+  #projects h2 {
+    font-size: xxx-large;
+  }
+  .projectName {
+    font-size: small;
+  }
+  #project-tile img {
+    width: 100%;
+  }
+  .carousel-control-next,
+  .carousel-control-prev {
+    width: 2em;
   }
 }
 /* phone landscape layout */
-@media (max-width: 812px) {
+@media (max-width: 823px) {
+  #navbar {
+    font-size: .8rem;
+  }
   #navbar li {
     margin: 1em;
   }
+  #nav-email {
+    margin-left: 1em;
+  }
   #welcome-section {
     height: 100vh;
-    font-size: 120%;
+    font-size: 100%;
+    padding: 1em;
+    padding-bottom: 0em;
   }
   #welcome-section h1 {
-    margin-top: 2em;
+    margin-top: 0em;
   }
   #welcome-section p {
-    margin-bottom: 1em;
-  }
-  .resume-icon {
-    height: 3.5em;
-    margin-top: 1em;
+    padding-bottom: 2em;
   }
   #projects {
     padding-top: 5em;
@@ -356,7 +364,8 @@ html,body {
     margin-left: 1em;
   }
   #welcome-section {
-    font-size: 175%;
+    height: 100vh;
+    font-size: 155%;
     padding: 1em;
     padding-bottom: 0em;
   }
