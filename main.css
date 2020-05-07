@@ -70,6 +70,7 @@ html,body {
   background-color: rgba(255, 255, 255, .5);
   box-shadow: 0px 0px 0px 4px white;
   padding: .75em;
+  height: auto;
   transform: scale(1.5);
   transition: transform 0.3s ease-out;
   transition: 0.5s;
@@ -310,6 +311,20 @@ html,body {
   .carousel-control-prev {
     width: 2em;
   }
+  #contact {
+    font-size: 200%;
+  }
+  #contact h2 {
+    font-size: 300%;
+  }
+  #contact p {
+    font-size: 150%;
+  }
+  #github,
+  #email,
+  #linkedin {
+    height: 80px;
+  }
 }
 /* phone landscape layout */
 @media (max-width: 823px) {
@@ -355,6 +370,20 @@ html,body {
   #contact p {
     text-shadow: 1px 1px 2px black;
   }
+   #contact {
+    font-size: 100%;
+  }
+  #contact h2 {
+    font-size: 300%;
+  }
+  #contact p {
+    font-size: 150%;
+  }
+  #github,
+  #email,
+  #linkedin {
+    height: 60px;
+  }
 }
 /* phone portrait layout */
 @media (max-width: 479px) {
@@ -398,5 +427,52 @@ html,body {
   }
   .contact-logos {
     grid-column-gap: 10px;
+  }
+}
+@media (min-height: 1023px) {
+   #navbar {
+    font-size: 1.5rem;
+  }
+  #welcome-section {
+    height: 100vh;
+    font-size: 270%;
+  }
+  #welcome-section p {
+    margin-bottom: 1em;
+  }
+  .resume-icon {
+    height: 3.5em;
+    margin-top: 1em;
+  }
+  #projects {
+    padding-top: 5em;
+    height: 100vh;
+  }
+  #projects h2 {
+    font-size: xxx-large;
+  }
+  .projectName {
+    font-size: small;
+  }
+  #project-tile img {
+    width: 100%;
+  }
+  .carousel-control-next,
+  .carousel-control-prev {
+    width: 2em;
+  }
+  #contact {
+    font-size: 180%;
+  }
+  #contact h2 {
+    font-size: 300%;
+  }
+  #contact p {
+    font-size: 150%;
+  }
+  #github,
+  #email,
+  #linkedin {
+    height: 80px;
   }
 }
