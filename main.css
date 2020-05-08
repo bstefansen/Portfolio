@@ -238,6 +238,7 @@ html,body {
     font-size: 2rem;
   }
   #welcome-section {
+    min-height: 850px;
     font-size: 600%;
   }
   .resume-icon {
@@ -245,6 +246,7 @@ html,body {
     margin-top: 1em;
   }
   #projects {
+    min-height: 1000px;
     font-size: 400%;
   }
   #projects h2 {
@@ -265,6 +267,7 @@ html,body {
   }
   #contact {
     font-size: 400%;
+    min-height: 850px;
   }
   #contact h2 {
     font-size: 300%;
@@ -285,6 +288,7 @@ html,body {
 @media (max-width: 1366px) {
   #welcome-section {
     height: 100vh;
+    min-height: 700px;
     font-size: 250%;
   }
   #welcome-section p {
@@ -297,6 +301,7 @@ html,body {
   #projects {
     padding-top: 5em;
     height: 100vh;
+    min-height: 550px;
   }
   #projects h2 {
     font-size: xxx-large;
@@ -313,6 +318,7 @@ html,body {
   }
   #contact {
     font-size: 200%;
+    min-height: 550px;
   }
   #contact h2 {
     font-size: 300%;
@@ -342,6 +348,7 @@ html,body {
     font-size: 100%;
     padding: 1em;
     padding-bottom: 0em;
+    min-height: 400px;
   }
   #welcome-section h1 {
     margin-top: 0em;
@@ -352,6 +359,7 @@ html,body {
   #projects {
     padding-top: 5em;
     height: 100vh;
+    min-height: 400px;
     font-size: 50%;
   }
   .projectName {
@@ -372,6 +380,7 @@ html,body {
   }
    #contact {
     font-size: 100%;
+    min-height: 400px;
   }
   #contact h2 {
     font-size: 300%;
