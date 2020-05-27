@@ -31,7 +31,7 @@ html,body {
   transition: 0.5s;
 }
 #navbar a:hover {
-  color: #659DBD;
+  color: yellow;
 }
 #nav-email {
   position: absolute;
