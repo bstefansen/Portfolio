@@ -341,7 +341,7 @@ html,body {
 /* phone landscape layout */
 @media (max-width: 823px) {
   #navbar {
-    font-size: .8rem;
+    font-size: 1rem;
   }
   #navbar li {
     margin: 1em;
@@ -351,7 +351,7 @@ html,body {
   }
   #welcome-section {
     height: 100vh;
-    font-size: 100%;
+    font-size: 150%;
     padding: 1em;
     padding-bottom: 0em;
     min-height: 400px;
