@@ -320,7 +320,7 @@ html,body {
   }
   .carousel-control-next,
   .carousel-control-prev {
-    width: 2em;
+    width: 4em;
   }
   #contact {
     font-size: 200%;
@@ -354,7 +354,7 @@ html,body {
     font-size: 150%;
     padding: 1em;
     padding-bottom: 0em;
-    min-height: 400px;
+    min-height: 500px;
   }
   #welcome-section h1 {
     margin-top: 0em;
@@ -365,8 +365,11 @@ html,body {
   #projects {
     padding-top: 5em;
     height: 100vh;
-    min-height: 400px;
-    font-size: 50%;
+    min-height: 900px;
+    font-size: 80%;
+  }
+  .projectGrid {
+    grid-template-columns: 1fr;
   }
   .projectName {
     font-size: small;
@@ -377,6 +380,10 @@ html,body {
     margin-right: auto;
     width: 70%;
     height: 25%;
+  }
+  .carousel-control-next,
+  .carousel-control-prev {
+    width: 8em;
   }
   #contact h2 {
     font-size: xxx-large;
@@ -438,7 +445,7 @@ html,body {
   }
   .carousel-control-next,
   .carousel-control-prev {
-    width: 2em;
+    width: 4em;
   }
   .contact-logos {
     grid-column-gap: 10px;
@@ -474,7 +481,7 @@ html,body {
   }
   .carousel-control-next,
   .carousel-control-prev {
-    width: 2em;
+    width: 4em;
   }
   #contact {
     font-size: 180%;
