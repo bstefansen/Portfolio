@@ -57,8 +57,8 @@ html,body {
   margin-bottom: 1.25em;
   text-shadow: 3px 3px 7px black;
   position: relative;
-  left: -1500px;
-  animation: slideright 2s forwards, fadein 4s;
+  top: -100px;
+  animation: slidedown 2s forwards, fadein 4s;
 }
 #welcome-section p {
   font-size: 80%;
@@ -92,8 +92,8 @@ html,body {
   0% { top: 2em;}
   100% { top: 0; }
 }
-@keyframes slideright {
-  100% { left: 0; }
+@keyframes slidedown {
+  100% { top: 0; }
 }
 @keyframes slideleft {
   100% { right: 0; }
