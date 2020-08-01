@@ -381,6 +381,10 @@ html,body {
     width: 70%;
     height: 25%;
   }
+  .codeTile:hover,
+  .projectTile:hover {
+    transform: scale(1.05);
+  }
   .carousel-control-next,
   .carousel-control-prev {
     width: 8em;
