@@ -233,6 +233,36 @@ html,body {
 #linkedin {
   padding-bottom: 5px;
 }
+#contact-form {
+  width: 100%;
+  background-color: rgba(0, 0, 0, .7);
+  padding: 1em;
+}
+#name-email {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.25em;
+}
+#name-email > input, #name-email > input {
+  padding: 10px;
+}
+#text-area {
+  margin-top: 0.25em;
+  width: 100%;
+  padding: 10px;
+}
+#contact-form-button {
+  width: 100%;
+  background-color: white;
+  border: solid 2px white;
+  transition: 0.5s;
+}
+#contact-form-button:hover {
+  color: yellow;
+  background-color: black;
+  transition: 0.5s;
+}
+
 
 /* MEDIA QUERY SECTION*/
 /* desktop layout */
@@ -324,7 +354,7 @@ html,body {
   }
   #contact {
     font-size: 200%;
-    min-height: 550px;
+    min-height: 750px;
   }
   #contact h2 {
     font-size: 300%;
@@ -397,7 +427,7 @@ html,body {
   }
    #contact {
     font-size: 100%;
-    min-height: 400px;
+    min-height: 500px;
   }
   #contact h2 {
     font-size: 300%;
